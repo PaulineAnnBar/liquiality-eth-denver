@@ -1,5 +1,5 @@
 import React from "react";
-
+import logo from "../images/logo.png";
 const Navbar = () => {
   const [address, setAddress] = React.useState("Sign in");
 
@@ -40,11 +40,7 @@ const Navbar = () => {
     <nav className="px-2 bg-white border-docsGrey-200 dark:bg-docsGrey-900 sticky top-0 shadow-md mt-1 pt-2 pb-2 z-10">
       <div className="container flex flex-wrap justify-between items-center mx-auto">
         <a href="/" className="flex items-center">
-          <img
-            src="https://docs.liquality.io/img/logo_light.svg"
-            className="mr-3 h-6 sm:h-10"
-            alt="Liquality Logo"
-          />
+          <img src={logo} alt="Logo" className="mr-3 h-6 sm:h-10" />
         </a>
         <button
           data-collapse-toggle="navbar-multi-level"
@@ -73,7 +69,7 @@ const Navbar = () => {
           id="navbar-multi-level"
         >
           <ul className="flex flex-col p-4 mt-4 bg-docsGrey-50 rounded-lg  md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-docsGrey-800 md:dark:bg-docsGrey-900 dark:border-docsGrey-700">
-            <li>
+            {/* <li>
               <a
                 href="/"
                 className="block py-2 pr-4 pl-3 text-purple bg-purple-700 rounded md:bg-transparent md:text-purple-700 md:p-0 md:dark:text-purple dark:bg-purple-600 md:dark:bg-transparent"
@@ -81,7 +77,7 @@ const Navbar = () => {
               >
                 Home
               </a>
-            </li>
+            </li>  */}
             <li>
               <a
                 href="/auth"
@@ -90,14 +86,14 @@ const Navbar = () => {
                 Create & Auth
               </a>
             </li>
-            <li>
+            {/* <li>
               <a
                 href="/balances"
                 className="block py-2 pr-4 pl-3 text-docsGrey-700 rounded hover:bg-docsGrey-100 md:hover:bg-transparent md:border-0 md:hover:text-purple-700 md:p-0 dark:text-docsGrey-400 md:dark:hover:text-white dark:hover:bg-docsGrey-700 dark:hover:text-white md:dark:hover:bg-transparent"
               >
                 Tokens & Balances
               </a>
-            </li>
+            </li> */}
             <div className="relative inline-block">
               <button
                 onClick={setShowDropdown}
@@ -114,22 +110,22 @@ const Navbar = () => {
                     Fetch NFTs
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="/collectibles/transfer"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     Transfer
                   </a>
-                </li>
-                <li>
+                </li> */}
+                {/* <li>
                   <a
                     href="/collectibles/create-erc721-collection"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                   >
                     Create ERC721 Collection
                   </a>
-                </li>
+                </li> */}
                 <li>
                   <a
                     href="/collectibles/create-erc1155-collection"
