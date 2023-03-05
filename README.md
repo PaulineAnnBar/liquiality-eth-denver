@@ -1,6 +1,6 @@
-# Liquality SDK Demo app
+# implementation of liquiality wallet
 
-A demo app for Liquality SDK. It demonstrates the usage of all modules of the SDK.
+Wallet to allow DAO and contributors to interact on the same platform
 
 # Run the app
 
